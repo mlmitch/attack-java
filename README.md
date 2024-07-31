@@ -4,7 +4,26 @@ A Java library for working with MITRE ATT&CK®.
 
 ## Usage
 
-Update here with maven instructions and some example code once non snapshot release is cut and available in maven central.
+Depend on the `attack-java` artifact with Maven:
+```xml
+<dependency>
+    <groupId>com.wassonlabs</groupId>
+    <artifactId>attack-java</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
+or Gradle:
+```groovy
+implementation group: 'com.wassonlabs', name: 'attack-java', version: '0.0.1'
+```
+
+In your application, use the `EnterpriseAttack` class to access ATT&CK data:
+
+```java
+Tactic privilegeEscalation = EnterpriseAttack.getTactic("TA0004");
+Technique accessTokenManipulation = EnterpriseAttack.getTechnique("T1134");
+Subtechnique parentPidSpoofing = EnterpriseAttack.getSubtechnique("T1134.004");
+```
 
 ## Development
 
