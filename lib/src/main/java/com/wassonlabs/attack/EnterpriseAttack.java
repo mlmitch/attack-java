@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 
+/**
+ * Provides access to the ATT&amp;CK framework.
+ */
 public final class EnterpriseAttack {
 
     private static final String ENTERPRISE_ATTACK_FILE_NAME = "enterprise-attack.xml";
@@ -25,14 +28,32 @@ public final class EnterpriseAttack {
     private EnterpriseAttack() {
     }
 
+    /**
+     * Retrieves the tactic with a given ID.
+     *
+     * @param id The ID of the tactic to retrieve.
+     * @return The tactic with the given ID, or null if no such tactic exists.
+     */
     public static Tactic getTactic(String id) {
         return tactics.get(id);
     }
 
+    /**
+     * Retrieves the technique with a given ID.
+     *
+     * @param id The ID of the technique to retrieve.
+     * @return The technique with the given ID, or null if no such technique exists.
+     */
     public static Technique getTechnique(String id) {
         return techniques.get(id);
     }
 
+    /**
+     * Retrieves the subtechnique with a given ID.
+     *
+     * @param id The ID of the subtechnique to retrieve.
+     * @return The subtechnique with the given ID, or null if no such subtechnique exists.
+     */
     public static Subtechnique getSubtechnique(String id) {
         return subtechniques.get(id);
     }
