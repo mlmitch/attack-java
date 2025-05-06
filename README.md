@@ -9,13 +9,15 @@ Depend on the `attack-java` artifact with Maven:
 <dependency>
     <groupId>com.wassonlabs</groupId>
     <artifactId>attack-java</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-implementation group: 'com.wassonlabs', name: 'attack-java', version: '0.0.2'
+implementation group: 'com.wassonlabs', name: 'attack-java', version: '0.0.3'
 ```
+
+Version `0.0.3` supports ATT&CK v17.1.
 
 In your application, use the `EnterpriseAttack` class to access ATT&CK data:
 
